@@ -1,0 +1,22 @@
+
+1.	First create a main folder (root folder).
+•	(project/) containing all files)
+
+2.	static/ Directory.
+•	Holds static files such as CSS, JavaScript and images.
+•	styles.css (CSS file name).
+•	script.js (JavaScript file name).
+
+3.	templates/ Directory.
+•	Contains HTML file.
+•	The main HTML file (index.html file name).
+
+4.	main.py.
+•	The main Python file (main.py file name).
+      
+project/ │ ├── static/ │ ├── styles.css │ ├── script.js │ ├── templates/ │ ├── index.html │ └── main.py
+
+	Run a Python file in the terminal.
+•	Open  Terminal.
+•	Install FastAPI and Uvicorn (pip install fastapi uvicorn)
+•	Run file ( uvicorn main:app –reload)
