@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fashion Store</title>
+    <link rel="stylesheet" href="static\styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>FASHION STORE</h1>
+            </div>
+            <div class="nav-items">
+                <div class="search"> 
+
+                    
+                    <input type="text" placeholder="Search products..." autocomplete="off">
+                    
+            
+                    
+                    <button class="search-btn">Search</button> 
+
+                    <select id="category-filter" onchange="fetchProducts()">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Iphone</option>
+                        <option value="clothing">BlueBlazer</option>
+                        <!-- <option value="home">Home</option> -->
+                        </select>
+                
+
+
+
+                    <!--suggestion-->
+                    
+                    
+                    <!--Here -->
+                    
+                <div class="cart-icon">
+                    <span class="cart-count">0</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="category-nav">
+            <ul>
+                <li><a href="#" class="active">New Arrivals</a></li>
+                <li><a href="#"> Men</a></li>    <!--  ADD A LINK -->
+
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>New Season Arrivals</h2>
+            <p>Check out all the new trends</p>
+            <a href="#">  <!--  ADD A LINK -->
+            <button class="shop-now-btn">Shop Now</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="Best-products">
+        <h2>Best Products</h2>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+
+            <div class="product-card">
+                <div class="img/air.png">
+                    <img src="/static/jordan.png" alt="Jordan" height="150">
+                    <div class="product-overlay">
+                        <a href="#">   <!--ADD A LINK-->
+
+                        <button class="quick-view"> View</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Classic Sneaker</h3>
+                    <p class="product-description">High Quality Sneaker with extra comfort.</p>
+                    <p class="price">Rs.45500</p>
+                
+                    
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="product-card">
+                    <div class="img/air.png">
+                        <img src="/static/head.jpeg" alt="Headphone" height="150">
+                        <div class="product-overlay">
+                            <a href="#">   <!--  ADD A LINK -->
+                                <button class="quick-view"> View</button>
+                            </a>
+                        </div>
+                    <h3 class="product-name">Wireless Headphones</h3>
+                    <p class="product-description">wireless headphones with noise-canceling.</p>
+                    <p class="product-price">Rs.4490</p>
+
+                    <!-- <a href="https://www.theaudiostore.in/products/edifier-wh700nb-active-noise-canceling-wireless-headphones?variant=44561982619903&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOorll-ckLB-371a81LMK3lg_qazefivN0V6CR_Gscw8z6cKJVtQF-yo">
+                        <button class="quick-view"> View</button>
+                    </a> -->
+                </div>
+
+                <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+
+                </div>
+
+                <div class="container">
+                    <div class="product-card">
+                        <div class="img/air.png">
+                            <img src="/static/iphone.jpeg" alt="iPhone" height="150">
+                            <div class="product-overlay">
+                                <a href="#">    <!--  ADD A LINK -->
+
+                                <button class="quick-view"> View</button>
+                                </a>
+                            </div>
+                        <h3 class="product-name">Iphone</h3>
+                        <p class="product-description">Iphone 15 Pink Hurry 5 left "Card Discount".</p>
+                        <p class="product-price"> Sale Rs.57999</p>
+                    </div>
+    
+                    <button class="add-to-cart">Add to Cart</button>
+    
+                    </div>
+    
+                    </div>
+
+                    <div class="container">
+                        <div class="product-card">
+                            <div class="img/air.png">
+                                <img src="/static/BlueBlazer.jpg" alt="Blazer" height="150">
+                                <div class="product-overlay">
+                                    <a href="#"> <!--  ADD A LINK -->
+                                    <button class="quick-view">View</button>
+                                    </a>
+                                </div>
+                            <h3 class="product-name">Blazer</h3>
+                            <p class="product-description">Blackberry - Formal Blue Check Blazer - "Chestoro".</p>
+                            
+                            
+                            <p class="product-price">Rs.7999</p>
+                        </div>
+        
+                        <button class="add-to-cart">Add to Cart</button>
+        
+                        </div>
+        
+                        </div>
+
+                        <div class="container">
+                            <div class="product-card">
+                                <div class="img/air.png">
+                                    <img src="/static/pCharger.jpeg" alt="Power Bank" height="150">
+                                    <div class="product-overlay">
+                                        <a href="#"> <!--  ADD A LINK -->
+
+ 
+                                        <button class="quick-view">View</button>
+                                        </a>
+                                    </div>
+                                <h3 class="product-name">Power Bank</h3>
+                                <p class="product-description">Best Portable Chargers for All of Your Devices.</p>
+                                <p class="product-price"> Sale Rs.1299</p>
+                            </div>
+                            <a href="#"></a>  <!--  ADD A LINK -->
+    
+                            <button class="add-to-cart">Add to Cart</button>
+                            </a>   
+                            </div>
+            
+                            </div>
+        
+
+            <!-- More product cards can be added here -->
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    
+<br>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Store Locations</a></li>
+
+                </ul>
+            </div>
+            <br>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </footer>
+
+    <script src="static\script.js"></script>
+    
+</body>
+</html>
